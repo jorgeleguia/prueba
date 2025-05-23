@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(34, 40, 49, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.17);
+    padding: 48px 32px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 24px;
+    filter: drop-shadow(0 4px 16px #00ffc3);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    color: #00ffc3;
+    text-shadow: 0 2px 12px #003e63;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #eee;
+    margin-bottom: 32px;
+}
+
+.loader {
+    border: 5px solid #2e4157;
+    border-top: 5px solid #00ffc3;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 28px;
+    animation: spin 1.4s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.follow-us {
+    margin-top: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 12px;
+}
+
+.social-icons img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    filter: drop-shadow(0 2px 8px #00ffc3aa);
+}
+
+.social-icons a:hover img {
+    transform: scale(1.18) rotate(-8deg);
+    box-shadow: 0 2px 8px #00ffc3;
+}
+
+footer {
+    margin-top: 32px;
+    font-size: 0.95rem;
+    color: #aaa;
+    letter-spacing: 1px;
+}
